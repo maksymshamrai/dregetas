@@ -1,0 +1,136 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.dregetas:hover {
+  filter: drop-shadow(0 0 2em #fbc261aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a .spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.corner-logo {
+  position: fixed;
+  left: 1.5rem;
+  bottom: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  z-index: 1000;
+}
+.typewriter {
+  font-family: monospace;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+
+  border-right: 2px solid currentColor;
+
+  width: 0;
+  animation:
+    typing 2.5s steps(8, end) forwards,
+    blink 0.8s step-end infinite;
+}
+
+/* кількість символів = steps() */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.copyright {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+
+  font-size: 0.75rem;
+  font-family: monospace;
+  letter-spacing: 0.08em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  user-select: none;
+  pointer-events: none;
+  z-index: 1000;
+}
+.site-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  /*flex-direction: column;
+  align-items: flex-start;*/
+  margin-top: 2rem;
+}
+
+.site-buttons a {
+  padding: 0.5rem 1rem;
+
+  font-size: 0.85rem;
+  font-family: monospace;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease;
+}
+.site-buttons a:hover {
+  background: rgba(255, 140, 0, 0.15);
+  border-color: #ff8c00;
+  transform: translateY(-2px);
+}
+.site-buttons a {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
