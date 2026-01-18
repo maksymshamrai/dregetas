@@ -13,7 +13,7 @@ function App() {
         {/* <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a> */}
-        <a href="https://react.dev" target="_blank">
+        <a href="https://youtube.com/@Dregetas" target="_blank">
           <img src={dregetasLogo} className="logo dregetas spin" alt="Dregetas logo" />
         </a>
         <h1 className="typewriter">Dregetas</h1>
